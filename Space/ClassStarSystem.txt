@@ -1,0 +1,70 @@
+using System;
+using static System.Console;
+
+namespace Space
+{
+    /*internal class StarSystem
+    {
+        protected string _name;
+        protected List<SpaceObject> _spaceObject;
+        protected List<Planet> _planets;
+        protected Star _mainStar;
+        internal void GetName() => WriteLine($"You are within the {_name} star system");
+
+        internal string GetAllNameObjects()
+        {
+            string output = "";
+            for (int i = 0; i < _spaceObject.Count; i++)
+            {
+                output += _spaceObject[i].GetName();
+            }
+            return output;
+        }
+        internal string GetAllNamePlanets()
+        {
+            string output = "";
+            for (int i = 0; i < _planets.Count; i++)
+            {
+                output += _spaceObject[i].GetName();
+            }
+            return output;
+        }
+
+        internal StarSystem(string name, Star main)
+        {
+            this._mainStar = main;
+            this._name = name;
+            this._spaceObject = new List<SpaceObject>();
+            this._planets = new List<Planet>();
+        }
+        internal void PrintSystem()
+        {
+            GetName();
+            WriteLine($"Center of the star system: {this._mainStar}");
+            WriteLine($"Planets in this star system: {this.GetAllNamePlanets}");
+            WriteLine($"Space object of this star system: {this.GetAllNameObjects}");
+        }
+
+        /*internal void AddPlanetToStarSystem(Planet planet)
+       {
+        if (planet.CheckAddToStar(this))
+        {
+            this._planets.Add(planet);
+            WriteLine($"The planet {planet.GetName()} has been successfully attached to the {this._name} star system!");
+        }
+        else WriteLine($"The planet {planet.GetName()} already belongs to another star system");
+       }
+       internal void AddPlanetToStarSystem(List<Planet> planet)
+       {
+            for (int i = 0; i < planet.Count; i++) {
+                if (planet[i].CheckAddToStar(this))
+                {
+                    this._planets.Add(planet[i]);
+                    WriteLine($"The planet {planet[i].GetName()} has been successfully attached to the {this._name} star system!");
+                }
+                else WriteLine($"The planet {planet[i].GetName()} already belongs to another star system");
+            }
+       }
+
+    }*/
+}
